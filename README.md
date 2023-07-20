@@ -11,6 +11,8 @@ This repo contains Z88DK modules that can be used independently for game develop
 - OFFSCREEN: Linear Framebuffer management and blitting to real screen
 - ASSERTION: debug tool for ensuring certain conditions are met during execution
 
+_Note: this is still a Work In Progress, I'm moving my previous libraries to this repo, so if a module you want appears listed above but you don't still see the code, please be patient :-)_
+
 ## Module usage and dependencies
 
 These modules are intended to be copied in your game source and used as additional source files. They are not meant to be compiled as libraries, because some optimizations can be made only at compile time for performance reasons.
