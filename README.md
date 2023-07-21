@@ -29,7 +29,7 @@ The modules are mostly self contained, except for the dependencies indicated in 
 | SPRITE    | OFFSCREEN,ASSERT |
 | SCROLL    | OFFSCREEN,ASSERT |
 | SEQUENCE  | ASSERT           |
-| INTERRUPT | ASSERT           |
+| INTERRUPT |                  |
 | OFFSCREEN | ASSERT           |
 | ASSERT    |                  |
 | TEMPLATE  |                  |
