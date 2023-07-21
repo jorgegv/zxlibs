@@ -5,7 +5,9 @@ This repo contains Z88DK modules that can be used independently for game develop
 ## Available modules
 
 - SPRITE: simple sprite drawing, includes preshifting. Intended to be used with a Linear Framebuffer, e.g. the OFFSCREEN module described below.
-- SCROLL: multidirectional scrolling, also to be used with a linear framwbuffer
+- TILE: basic 8x8-pixel tile drawing routines
+- BTILE: big (composite) tile drawing routines and structures
+- SCROLL: multidirectional scrolling, also to be used with a linear framebuffer
 - SEQUENCE: control of animation sequences, implemented as a state machine
 - [INTERRUPT](src/interrupt): basic IM2 interrupt setup and periodic task execution
 - OFFSCREEN: Linear Framebuffer management and blitting to real screen
@@ -24,12 +26,14 @@ If you use the TEMPLATE `Makefile` from this repository, you don't need to modif
 
 The modules are mostly self contained, except for the dependencies indicated in the following table:
 
-| Module    | Deps             |
-|-----------|------------------|
-| SPRITE    | OFFSCREEN,ASSERT |
-| SCROLL    | OFFSCREEN,ASSERT |
-| SEQUENCE  | ASSERT           |
-| INTERRUPT |                  |
-| OFFSCREEN | ASSERT           |
-| ASSERT    |                  |
-| TEMPLATE  |                  |
+| Module    | Dependencies |
+|-----------|--------------|
+| SPRITE    | OFFSCREEN    |
+| TILE      | OFFSCREEN    |
+| BTILE     | TILE         |
+| SCROLL    | OFFSCREEN    |
+| SEQUENCE  |              |
+| INTERRUPT |              |
+| OFFSCREEN |              |
+| ASSERT    |              |
+| TEMPLATE  |              |
