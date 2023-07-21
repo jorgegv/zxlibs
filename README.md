@@ -10,6 +10,7 @@ This repo contains Z88DK modules that can be used independently for game develop
 - INTERRUPT: basic IM2 interrupt setup and periodic task execution
 - OFFSCREEN: Linear Framebuffer management and blitting to real screen
 - ASSERT: debug tool for ensuring certain conditions are met during execution
+- TEMPLATE: a Makefile template which makes it easy to bootstrap new projects
 
 _Note: this is still a Work In Progress, I'm moving my previous libraries to this repo, so if a module you want appears listed above but you don't still see the code, please be patient :-)_
 
@@ -21,13 +22,12 @@ So to use any module, just add its C files to your `Makefile` if needed, put the
 
 The modules are mostly self contained, except for the dependencies indicated in the following table:
 
-| Module    | Deps      |
-|-----------|-----------|
-| SPRITE    | OFFSCREEN |
-| SCROLL    | OFFSCREEN |
-| SEQUENCE  |           |
-| INTERRUPT |           |
-| OFFSCREEN |           |
-| ASSERT    |           |
-
-
+| Module    | Deps             |
+|-----------|------------------|
+| SPRITE    | OFFSCREEN,ASSERT |
+| SCROLL    | OFFSCREEN,ASSERT |
+| SEQUENCE  | ASSERT           |
+| INTERRUPT | ASSERT           |
+| OFFSCREEN | ASSERT           |
+| ASSERT    |                  |
+| TEMPLATE  |                  |
