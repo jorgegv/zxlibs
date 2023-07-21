@@ -9,8 +9,8 @@ This repo contains Z88DK modules that can be used independently for game develop
 - SEQUENCE: control of animation sequences, implemented as a state machine
 - INTERRUPT: basic IM2 interrupt setup and periodic task execution
 - OFFSCREEN: Linear Framebuffer management and blitting to real screen
-- [ASSERT](../src/assert/): debug macros for ensuring certain conditions are met during execution
-- [TEMPLATE](../src/template/): a Makefile template which makes it easy to bootstrap new projects
+- [ASSERT](src/assert/): debug macros for ensuring certain conditions are met during execution
+- [TEMPLATE](src/template/): a Makefile template which makes it easy to bootstrap new projects
 
 _Note: this is still a Work In Progress, I'm moving my previous libraries to this repo, so if a module you want appears listed above but you don't still see the code, please be patient :-)_
 
