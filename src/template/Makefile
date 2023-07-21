@@ -33,11 +33,10 @@ ZCC = zcc +zx -vn -m --list --c-code-in-asm
 # Additional custom CFLAGS, put them here
 #CFLAGS += (...whatever)
 
-# Basic linker flags
-LDFLAGS = -lndos
-
 # Additional custom LDFLAGS, put them here
 #LDFLAGS += -lsp1-zx -startup=31 -lmath32 (etc)
+# Minimal Newlib target LDFLAGS
+#LDFLAGS = -lndos -startup=31
 
 #############################################################
 # No more configuration is normally needed below this line
