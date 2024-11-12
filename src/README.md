@@ -1,3 +1,3 @@
 # Sources
 
-This directory contains module sources. Each module should have a dedicated directory.
+This directory contains module sources. Each module has a dedicated directory.
