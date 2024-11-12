@@ -48,7 +48,7 @@ ZCC = zcc +zx -vn -m --list --c-code-in-asm
 TAP_FILE = main.tap
 
 # generic source definitions
-SRCS_C          = $(wildcard *.c) $(wildcard tiles/*.c) $(wildcard sprites/*.c)
+SRCS_C          = $(wildcard *.c)
 SRCS_ASM        = $(wildcard *.asm)
 OBJS            = $(SRCS_C:.c=.o) $(SRCS_ASM:.asm=.o)
 
@@ -64,7 +64,7 @@ $(TAP_FILE): $(OBJS)
 	$(ZCC) $(CFLAGS) $(OBJS) $(LDFLAGS) -o main -create-app
 
 clean:
-	-rm -f *.tap *.o *.bin *.map *.lis main *.c.lis
+	-rm -f *.tap *.o *.bin *.map *.lis main *.c.lis *.sym
 
 run:
 	fuse $(TAP_FILE)
