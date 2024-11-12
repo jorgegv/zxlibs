@@ -1,0 +1,959 @@
+	SECTION data_compiler
+
+	PUBLIC _charset6x8
+
+_charset6x8:
+
+; 6x8 font bitmaps, ASCII 32 to ASCII 127
+
+; * code=32, hex=0x20, ascii=" "
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+
+; * code=33, hex=0x21, ascii="!"
+	db	00010000b
+	db	00010000b
+	db	00010000b
+	db	00010000b
+	db	00010000b
+	db	00000000b
+	db	00010000b
+	db	00000000b
+
+; * code=34, hex=0x22, ascii="""
+	db	00101000b
+	db	00101000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+
+; * code=35, hex=0x23, ascii="#"
+	db	00000000b
+	db	00101000b
+	db	01111100b
+	db	00101000b
+	db	00101000b
+	db	01111100b
+	db	00101000b
+	db	00000000b
+
+; * code=36, hex=0x24, ascii="$"
+	db	00100000b
+	db	00111000b
+	db	01000000b
+	db	00110000b
+	db	00001000b
+	db	01110000b
+	db	00010000b
+	db	00000000b
+
+; * code=37, hex=0x25, ascii="%"
+	db	01100100b
+	db	01100100b
+	db	00001000b
+	db	00010000b
+	db	00100000b
+	db	01001100b
+	db	01001100b
+	db	00000000b
+
+; * code=38, hex=0x26, ascii="&"
+	db	00100000b
+	db	01010000b
+	db	01010000b
+	db	00100000b
+	db	01010100b
+	db	01001000b
+	db	00110100b
+	db	00000000b
+
+; * code=39, hex=0x27, ascii="'"
+	db	00100000b
+	db	00100000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+
+; * code=40, hex=0x28, ascii="("
+	db	00010000b
+	db	00100000b
+	db	00100000b
+	db	00100000b
+	db	00100000b
+	db	00100000b
+	db	00010000b
+	db	00000000b
+
+; * code=41, hex=0x29, ascii=")"
+	db	00100000b
+	db	00010000b
+	db	00010000b
+	db	00010000b
+	db	00010000b
+	db	00010000b
+	db	00100000b
+	db	00000000b
+
+; * code=42, hex=0x2A, ascii="*"
+	db	00000000b
+	db	00101000b
+	db	00010000b
+	db	01111100b
+	db	00010000b
+	db	00101000b
+	db	00000000b
+	db	00000000b
+
+; * code=43, hex=0x2B, ascii="+"
+	db	00000000b
+	db	00010000b
+	db	00010000b
+	db	01111100b
+	db	00010000b
+	db	00010000b
+	db	00000000b
+	db	00000000b
+
+; * code=44, hex=0x2C, ascii=","
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00010000b
+	db	00010000b
+	db	00100000b
+
+; * code=45, hex=0x2D, ascii="-"
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	01111100b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+
+; * code=46, hex=0x2E, ascii="."
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00010000b
+	db	00000000b
+
+; * code=47, hex=0x2F, ascii="/"
+	db	00000000b
+	db	00000100b
+	db	00001000b
+	db	00010000b
+	db	00100000b
+	db	01000000b
+	db	00000000b
+	db	00000000b
+
+; * code=48, hex=0x30, ascii="0"
+	db	00111000b
+	db	01000100b
+	db	01001100b
+	db	01010100b
+	db	01100100b
+	db	01000100b
+	db	00111000b
+	db	00000000b
+
+; * code=49, hex=0x31, ascii="1"
+	db	00010000b
+	db	00110000b
+	db	00010000b
+	db	00010000b
+	db	00010000b
+	db	00010000b
+	db	00111000b
+	db	00000000b
+
+; * code=50, hex=0x32, ascii="2"
+	db	00111000b
+	db	01000100b
+	db	00000100b
+	db	00011000b
+	db	00100000b
+	db	01000000b
+	db	01111100b
+	db	00000000b
+
+; * code=51, hex=0x33, ascii="3"
+	db	00111000b
+	db	01000100b
+	db	00000100b
+	db	00111000b
+	db	00000100b
+	db	01000100b
+	db	00111000b
+	db	00000000b
+
+; * code=52, hex=0x34, ascii="4"
+	db	00001000b
+	db	00011000b
+	db	00101000b
+	db	01001000b
+	db	01111100b
+	db	00001000b
+	db	00001000b
+	db	00000000b
+
+; * code=53, hex=0x35, ascii="5"
+	db	01111100b
+	db	01000000b
+	db	01000000b
+	db	01111000b
+	db	00000100b
+	db	01000100b
+	db	00111000b
+	db	00000000b
+
+; * code=54, hex=0x36, ascii="6"
+	db	00011000b
+	db	00100000b
+	db	01000000b
+	db	01111000b
+	db	01000100b
+	db	01000100b
+	db	00111000b
+	db	00000000b
+
+; * code=55, hex=0x37, ascii="7"
+	db	01111100b
+	db	00000100b
+	db	00001000b
+	db	00010000b
+	db	00100000b
+	db	00100000b
+	db	00100000b
+	db	00000000b
+
+; * code=56, hex=0x38, ascii="8"
+	db	00111000b
+	db	01000100b
+	db	01000100b
+	db	00111000b
+	db	01000100b
+	db	01000100b
+	db	00111000b
+	db	00000000b
+
+; * code=57, hex=0x39, ascii="9"
+	db	00111000b
+	db	01000100b
+	db	01000100b
+	db	00111100b
+	db	00000100b
+	db	00001000b
+	db	00110000b
+	db	00000000b
+
+; * code=58, hex=0x3A, ascii=":"
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00010000b
+	db	00000000b
+	db	00000000b
+	db	00010000b
+	db	00000000b
+
+; * code=59, hex=0x3B, ascii=";"
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00010000b
+	db	00000000b
+	db	00010000b
+	db	00010000b
+	db	00100000b
+
+; * code=60, hex=0x3C, ascii="<"
+	db	00001000b
+	db	00010000b
+	db	00100000b
+	db	01000000b
+	db	00100000b
+	db	00010000b
+	db	00001000b
+	db	00000000b
+
+; * code=61, hex=0x3D, ascii="="
+	db	00000000b
+	db	00000000b
+	db	01111100b
+	db	00000000b
+	db	00000000b
+	db	01111100b
+	db	00000000b
+	db	00000000b
+
+; * code=62, hex=0x3E, ascii=">"
+	db	00100000b
+	db	00010000b
+	db	00001000b
+	db	00000100b
+	db	00001000b
+	db	00010000b
+	db	00100000b
+	db	00000000b
+
+; * code=63, hex=0x3F, ascii="?"
+	db	00111000b
+	db	01000100b
+	db	00000100b
+	db	00011000b
+	db	00010000b
+	db	00000000b
+	db	00010000b
+	db	00000000b
+
+; * code=64, hex=0x40, ascii="@"
+	db	00111000b
+	db	01000100b
+	db	01011100b
+	db	01010100b
+	db	01011100b
+	db	01000000b
+	db	00111000b
+	db	00000000b
+
+; * code=65, hex=0x41, ascii="A"
+	db	00111000b
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	01111100b
+	db	01000100b
+	db	01000100b
+	db	00000000b
+
+; * code=66, hex=0x42, ascii="B"
+	db	01111000b
+	db	01000100b
+	db	01000100b
+	db	01111000b
+	db	01000100b
+	db	01000100b
+	db	01111000b
+	db	00000000b
+
+; * code=67, hex=0x43, ascii="C"
+	db	00111000b
+	db	01000100b
+	db	01000000b
+	db	01000000b
+	db	01000000b
+	db	01000100b
+	db	00111000b
+	db	00000000b
+
+; * code=68, hex=0x44, ascii="D"
+	db	01111000b
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	01111000b
+	db	00000000b
+
+; * code=69, hex=0x45, ascii="E"
+	db	01111100b
+	db	01000000b
+	db	01000000b
+	db	01111000b
+	db	01000000b
+	db	01000000b
+	db	01111100b
+	db	00000000b
+
+; * code=70, hex=0x46, ascii="F"
+	db	01111100b
+	db	01000000b
+	db	01000000b
+	db	01111000b
+	db	01000000b
+	db	01000000b
+	db	01000000b
+	db	00000000b
+
+; * code=71, hex=0x47, ascii="G"
+	db	00111000b
+	db	01000100b
+	db	01000000b
+	db	01011100b
+	db	01000100b
+	db	01000100b
+	db	00111100b
+	db	00000000b
+
+; * code=72, hex=0x48, ascii="H"
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	01111100b
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	00000000b
+
+; * code=73, hex=0x49, ascii="I"
+	db	00111000b
+	db	00010000b
+	db	00010000b
+	db	00010000b
+	db	00010000b
+	db	00010000b
+	db	00111000b
+	db	00000000b
+
+; * code=74, hex=0x4A, ascii="J"
+	db	00000100b
+	db	00000100b
+	db	00000100b
+	db	00000100b
+	db	01000100b
+	db	01000100b
+	db	00111000b
+	db	00000000b
+
+; * code=75, hex=0x4B, ascii="K"
+	db	01000100b
+	db	01001000b
+	db	01010000b
+	db	01100000b
+	db	01010000b
+	db	01001000b
+	db	01000100b
+	db	00000000b
+
+; * code=76, hex=0x4C, ascii="L"
+	db	01000000b
+	db	01000000b
+	db	01000000b
+	db	01000000b
+	db	01000000b
+	db	01000000b
+	db	01111100b
+	db	00000000b
+
+; * code=77, hex=0x4D, ascii="M"
+	db	01000100b
+	db	01101100b
+	db	01010100b
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	00000000b
+
+; * code=78, hex=0x4E, ascii="N"
+	db	01000100b
+	db	01100100b
+	db	01010100b
+	db	01001100b
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	00000000b
+
+; * code=79, hex=0x4F, ascii="O"
+	db	00111000b
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	00111000b
+	db	00000000b
+
+; * code=80, hex=0x50, ascii="P"
+	db	01111000b
+	db	01000100b
+	db	01000100b
+	db	01111000b
+	db	01000000b
+	db	01000000b
+	db	01000000b
+	db	00000000b
+
+; * code=81, hex=0x51, ascii="Q"
+	db	00111000b
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	01010100b
+	db	01001000b
+	db	00110100b
+	db	00000000b
+
+; * code=82, hex=0x52, ascii="R"
+	db	01111000b
+	db	01000100b
+	db	01000100b
+	db	01111000b
+	db	01001000b
+	db	01000100b
+	db	01000100b
+	db	00000000b
+
+; * code=83, hex=0x53, ascii="S"
+	db	00111000b
+	db	01000100b
+	db	01000000b
+	db	00111000b
+	db	00000100b
+	db	01000100b
+	db	00111000b
+	db	00000000b
+
+; * code=84, hex=0x54, ascii="T"
+	db	01111100b
+	db	00010000b
+	db	00010000b
+	db	00010000b
+	db	00010000b
+	db	00010000b
+	db	00010000b
+	db	00000000b
+
+; * code=85, hex=0x55, ascii="U"
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	00111000b
+	db	00000000b
+
+; * code=86, hex=0x56, ascii="V"
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	00101000b
+	db	00010000b
+	db	00000000b
+
+; * code=87, hex=0x57, ascii="W"
+	db	01000100b
+	db	01000100b
+	db	01010100b
+	db	01010100b
+	db	01010100b
+	db	01010100b
+	db	00101000b
+	db	00000000b
+
+; * code=88, hex=0x58, ascii="X"
+	db	01000100b
+	db	01000100b
+	db	00101000b
+	db	00010000b
+	db	00101000b
+	db	01000100b
+	db	01000100b
+	db	00000000b
+
+; * code=89, hex=0x59, ascii="Y"
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	00101000b
+	db	00010000b
+	db	00010000b
+	db	00010000b
+	db	00000000b
+
+; * code=90, hex=0x5A, ascii="Z"
+	db	01111100b
+	db	00000100b
+	db	00001000b
+	db	00010000b
+	db	00100000b
+	db	01000000b
+	db	01111100b
+	db	00000000b
+
+; * code=91, hex=0x5B, ascii="["
+	db	00111000b
+	db	00100000b
+	db	00100000b
+	db	00100000b
+	db	00100000b
+	db	00100000b
+	db	00111000b
+	db	00000000b
+
+; * code=92, hex=0x5C, ascii="\"
+	db	00000000b
+	db	01000000b
+	db	00100000b
+	db	00010000b
+	db	00001000b
+	db	00000100b
+	db	00000000b
+	db	00000000b
+
+; * code=93, hex=0x5D, ascii="]"
+	db	00111000b
+	db	00001000b
+	db	00001000b
+	db	00001000b
+	db	00001000b
+	db	00001000b
+	db	00111000b
+	db	00000000b
+
+; * code=94, hex=0x5E, ascii="^"
+	db	00010000b
+	db	00101000b
+	db	01000100b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+
+; * code=95, hex=0x5F, ascii="_"
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	11111100b
+
+; * code=96, hex=0x60, ascii="`"
+	db	00100000b
+	db	00010000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+
+; * code=97, hex=0x61, ascii="a"
+	db	00000000b
+	db	00000000b
+	db	00111000b
+	db	00000100b
+	db	00111100b
+	db	01000100b
+	db	00111100b
+	db	00000000b
+
+; * code=98, hex=0x62, ascii="b"
+	db	01000000b
+	db	01000000b
+	db	01111000b
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	01111000b
+	db	00000000b
+
+; * code=99, hex=0x63, ascii="c"
+	db	00000000b
+	db	00000000b
+	db	00111000b
+	db	01000100b
+	db	01000000b
+	db	01000100b
+	db	00111000b
+	db	00000000b
+
+; * code=100, hex=0x64, ascii="d"
+	db	00000100b
+	db	00000100b
+	db	00111100b
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	00111100b
+	db	00000000b
+
+; * code=101, hex=0x65, ascii="e"
+	db	00000000b
+	db	00000000b
+	db	00111000b
+	db	01000100b
+	db	01111100b
+	db	01000000b
+	db	00111000b
+	db	00000000b
+
+; * code=102, hex=0x66, ascii="f"
+	db	00011000b
+	db	00100000b
+	db	00100000b
+	db	01111000b
+	db	00100000b
+	db	00100000b
+	db	00100000b
+	db	00000000b
+
+; * code=103, hex=0x67, ascii="g"
+	db	00000000b
+	db	00000000b
+	db	00111100b
+	db	01000100b
+	db	01000100b
+	db	00111100b
+	db	00000100b
+	db	00111000b
+
+; * code=104, hex=0x68, ascii="h"
+	db	01000000b
+	db	01000000b
+	db	01111000b
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	00000000b
+
+; * code=105, hex=0x69, ascii="i"
+	db	00010000b
+	db	00000000b
+	db	00110000b
+	db	00010000b
+	db	00010000b
+	db	00010000b
+	db	00111000b
+	db	00000000b
+
+; * code=106, hex=0x6A, ascii="j"
+	db	00000100b
+	db	00000000b
+	db	00001100b
+	db	00000100b
+	db	00000100b
+	db	00000100b
+	db	01000100b
+	db	00111000b
+
+; * code=107, hex=0x6B, ascii="k"
+	db	01000000b
+	db	01000000b
+	db	01000100b
+	db	01001000b
+	db	01110000b
+	db	01001000b
+	db	01000100b
+	db	00000000b
+
+; * code=108, hex=0x6C, ascii="l"
+	db	00110000b
+	db	00010000b
+	db	00010000b
+	db	00010000b
+	db	00010000b
+	db	00010000b
+	db	00111000b
+	db	00000000b
+
+; * code=109, hex=0x6D, ascii="m"
+	db	00000000b
+	db	00000000b
+	db	01101000b
+	db	01010100b
+	db	01010100b
+	db	01010100b
+	db	01010100b
+	db	00000000b
+
+; * code=110, hex=0x6E, ascii="n"
+	db	00000000b
+	db	00000000b
+	db	01111000b
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	00000000b
+
+; * code=111, hex=0x6F, ascii="o"
+	db	00000000b
+	db	00000000b
+	db	00111000b
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	00111000b
+	db	00000000b
+
+; * code=112, hex=0x70, ascii="p"
+	db	00000000b
+	db	00000000b
+	db	01111000b
+	db	01000100b
+	db	01000100b
+	db	01111000b
+	db	01000000b
+	db	01000000b
+
+; * code=113, hex=0x71, ascii="q"
+	db	00000000b
+	db	00000000b
+	db	00111100b
+	db	01000100b
+	db	01000100b
+	db	00111100b
+	db	00000100b
+	db	00000100b
+
+; * code=114, hex=0x72, ascii="r"
+	db	00000000b
+	db	00000000b
+	db	00111000b
+	db	01000100b
+	db	01000000b
+	db	01000000b
+	db	01000000b
+	db	00000000b
+
+; * code=115, hex=0x73, ascii="s"
+	db	00000000b
+	db	00000000b
+	db	00111000b
+	db	01000000b
+	db	00111000b
+	db	00000100b
+	db	01111000b
+	db	00000000b
+
+; * code=116, hex=0x74, ascii="t"
+	db	00000000b
+	db	00100000b
+	db	01111000b
+	db	00100000b
+	db	00100000b
+	db	00100100b
+	db	00011000b
+	db	00000000b
+
+; * code=117, hex=0x75, ascii="u"
+	db	00000000b
+	db	00000000b
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	00111100b
+	db	00000000b
+
+; * code=118, hex=0x76, ascii="v"
+	db	00000000b
+	db	00000000b
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	00101000b
+	db	00010000b
+	db	00000000b
+
+; * code=119, hex=0x77, ascii="w"
+	db	00000000b
+	db	00000000b
+	db	01000100b
+	db	01010100b
+	db	01010100b
+	db	01111100b
+	db	00101000b
+	db	00000000b
+
+; * code=120, hex=0x78, ascii="x"
+	db	00000000b
+	db	00000000b
+	db	01000100b
+	db	00101000b
+	db	00010000b
+	db	00101000b
+	db	01000100b
+	db	00000000b
+
+; * code=121, hex=0x79, ascii="y"
+	db	00000000b
+	db	00000000b
+	db	01000100b
+	db	01000100b
+	db	01000100b
+	db	00111100b
+	db	00000100b
+	db	00111000b
+
+; * code=122, hex=0x7A, ascii="z"
+	db	00000000b
+	db	00000000b
+	db	01111100b
+	db	00000100b
+	db	00111000b
+	db	01000000b
+	db	01111100b
+	db	00000000b
+
+; * code=123, hex=0x7B, ascii="{"
+	db	00011000b
+	db	00100000b
+	db	00100000b
+	db	01100000b
+	db	00100000b
+	db	00100000b
+	db	00011000b
+	db	00000000b
+
+; * code=124, hex=0x7C, ascii="|"
+	db	00010000b
+	db	00010000b
+	db	00010000b
+	db	00010000b
+	db	00010000b
+	db	00010000b
+	db	00010000b
+	db	00000000b
+
+; * code=125, hex=0x7D, ascii="}"
+	db	00110000b
+	db	00001000b
+	db	00001000b
+	db	00001100b
+	db	00001000b
+	db	00001000b
+	db	00110000b
+	db	00000000b
+
+; * code=126, hex=0x7E, ascii="~"
+	db	00101000b
+	db	01010000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+	db	00000000b
+
+

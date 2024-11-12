@@ -15,6 +15,7 @@ This repo contains Z88DK modules that can be used independently for game develop
 - [TEMPLATE](src/template/): a Makefile template which makes it easy to bootstrap new projects
 - [HEAP](src/heap/): a quick heap configuration (NEWLIB only)
 - [RAWTILES](src/rawtiles): basic 8x8-pixel tile drawing-to-screen routines, simple and reusable for almost any situation (NEWLIB only)
+- [PRINT6X8](src/print6x8): 6x8-pixel character printing routines (NEWLIB only)
 
 _Note: this is still a Work In Progress, I'm moving my previous libraries to this repo, so if a module you want appears listed above but you don't still see the code, please be patient :-)_
 
@@ -43,3 +44,4 @@ The modules are mostly self contained, except for the dependencies indicated in 
 | TEMPLATE  |              |
 | HEAP      |              |
 | RAWTILES  |              |
+| PRINT6X8  | RAWTILES     |
