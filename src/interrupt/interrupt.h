@@ -3,6 +3,8 @@
 
 #include <stdint.h>
 
+#include "interrupt_config.h"
+
 extern uint32_t global_frame_counter;
 
 /*

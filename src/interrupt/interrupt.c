@@ -2,7 +2,15 @@
 #include <stdint.h>
 #include <string.h>
 
-#define MAX_INTERRUPT_TASKS 4
+#include "interrupt.h"
+
+#if ( ( (ISR_ADDR) / 256 ) != ( (ISR_ADDR) % 256 ) )
+    #error ISR_ADDR address low and high bytes must be equal!
+#endif
+
+#if ( ( (ISR_ADDR) >= (VECTOR_TABLE_ADDR) ) && ( (ISR_ADDR) <= (VECTOR_TABLE_ADDR) + 256 ) )
+    #error ISR_ADDR falls inside the vector table at VECTOR_TABLE_ADDR!
+#endif
 
 typedef void (*func_p)( void );
 
@@ -30,9 +38,9 @@ void init_interrupts( void ) {
 
     // setup interrupt table and vector
     intrinsic_di();
-    memset( (void *) 0xD000, 0xD1, 257 );
-    *(uint8_t *)0xD1D1 = 0xC3;			// JP opcode
-    *(uint16_t *)0xD1D2 = (uint16_t) &my_isr;	// JP destination
+    memset( (void *) VECTOR_TABLE_ADDR, (ISR_ADDR) / 256, 257 );
+    *(uint8_t *)(ISR_ADDR) = 0xC3;			// JP opcode
+    *(uint16_t *)(ISR_ADDR + 1) = (uint16_t) &my_isr;	// destination for JP
 
 __asm
     ld a,0xD0

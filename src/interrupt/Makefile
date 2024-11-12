@@ -34,7 +34,8 @@ ZCC = zcc +zx -vn -m --list --c-code-in-asm
 #CFLAGS += (...whatever)
 
 # Additional custom LDFLAGS, put them here
-#LDFLAGS += -lsp1-zx -startup=31 -lmath32 (etc)
+#LDFLAGS += -lsp1-zx -startup=31 -lmath32
+#LDFLAGS += -startup=31
 
 #############################################################
 # No more configuration is normally needed below this line
@@ -46,7 +47,7 @@ ZCC = zcc +zx -vn -m --list --c-code-in-asm
 TAP_FILE = main.tap
 
 # generic source definitions
-SRCS_C          = $(wildcard *.c) $(wildcard tiles/*.c) $(wildcard sprites/*.c)
+SRCS_C          = $(wildcard *.c)
 SRCS_ASM        = $(wildcard *.asm)
 OBJS            = $(SRCS_C:.c=.o) $(SRCS_ASM:.asm=.o)
 
